@@ -1,0 +1,106 @@
+
+    <!-- {% include twitter.html %} -->
+
+
+Nimble River consults on Ruby on Rails, evangelizes Kanban boards and lean methods, and gets your application and processes under control with the results you want. Whether you need a prototype, team augmentation, or an application rescued from technical debt, say hi at hello@   nimbleriver.com and let's chat about your needs.
+
+We may currently prefer the Ruby on Rails stack, but we can do much more. It all depends on what you need. We have more than 30 years of combined experience developing software in many languages and environments. The Nimble River team has development experience in higher education, energy         management, telecommunications, military, banking, retail, infrastructure management,  billing,         insurance, mortgage, legal, and manufacturing. Contact us if you want to work with seasoned             professionals to produce your solution.
+
+We don't want to be just another hired gun for you. We want our relationship to be built on solid communication and trust. To facilitate this, we need to learn to work together to avoid the     typical miscommunication between businesses and consultancies  that end in panic. This can be avoided   by following a few simple to understand principals. These principals will also allow you to remove      process bottlenecks, align teams, and better see the stream of value produced by our collective team.
+
+The Nimble River team has a history of upgrading out-of-date applications, smashing monolithic apps apart into a well-defined SOA architectures, and stabalizing applications from crashing daily. Whether you want to convert a legacy app to a modern stack or standardize your various environments, we can do that too. Informed decision making and careful refactorings will get your project back on track.
+
+
+
+
+
+<p>I like to write Ruby using Vim to create Rails applications for you on my Mac.</p>
+<p>I work best with small teams and I care about producing the best software. To me, that means more than simply checking off items on the todo list. That's the type of service that is all too prevalent in this industry. I like producing solid code that is designed for your users in mind.  If the end product isn't usable, friendly, and stable then it isn't finished.  </p>
+<p>I like working with end users to discuss what they truly want and need out of their systems and keeping everyone in the loop on the progress of the work. Constant communication and feedback are essential in producing successful software.</p>
+
+
+###-
+
+### Work With Experts
+
+Nimble River is a software development consulting firm located in Cincinnati, Ohio. We believe in agility     and being adaptive to fit your projects needs.  Our work also belive in flowing andn
+
+
+you can trust
+
+Seeks to build a lasting relationship that results in rewarding outcomes
+
+### Who You                                                                              Are                                                                                            20
+You and your users like to discuss what you truly want out of your systems and want to have insight into how everything is progressing. Constant communication and feedback are vitally necessary in      producing successful software. We prefer to use Kanban boards to let everyone vizualize where every     task stands.
+
+You embrace agile development methodologies and want to be listened to and colloraborted with to create the best possible outcome. You want us to do more than "hit the bullet points" like what most     consultancies deliver. If the end product isn't usable, friendly, and stable then it isn't finished.
+
+
+### What We Offer
+
+#### Ruby on Rails
+
+Combining over 14 years of development experience with the power of Ruby and Rails, I can provide you with a production quality application built to suite your needs.
+
+
+#### Project Rescue / Project Refactorings
+
+- monolithic apps => small services
+- project rescue
+
+#### Staff Augmentation
+
+I can also help your team if you already have a vision and simply need an additional hand. Or, if you need to get a handle on your development processes, I can
+
+#### Strategy
+
+- figure out what *not* to work on is as important as what to work on.
+- prioritize the highest value work and work at a consistent pace providing production ready code every [2 ?] week[s].
+
+
+
+
+#### Technical Leadership
+
+- Remove bottlenecks (organizationally as well as technical reasons holding you back)
+ - Small steps make a huge difference.
+ - Optimize team throughput, not individual productivity
+ - Everything is an Experiment
+ - Over-management has precisely the opposite intended affect.
+ - do you want your team to achieve excellence or avoid mistakes?
+
+#### User Experience
+
+ User interaction can be streamlined by Noticing Everyday Pain that customers experience and pay  attention     to it at every step of the process. However, finding the common ground of all user        activities is what shou    ld be designed for, not individual preferences.
+
+
+
+### How We Work
+
+ We prefer to be adaptive when it comes to plans instead of trying to have everything mapped out on a Gaant chart months before.
+
+ We prefer to work on the highest feature set of value at any given time.
+
+
+ We prefer to be able to change what we're working on because you changed you mind mid-process instead of conforming to a document that was written months ago when we all knew less.
+
+
+embed code
+{% highlight ruby linenos %}
+def print_hi(name)
+ puts "Hi, #{name}"
+ end
+ print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+
+[x] create nimbleriver twitter
+[x] add twitter feed here
+[ ] accidental vs essential complexity. how does this compare to incidental complexity?
+[ ] tell a story about what it's like to work with NR instead of normal marketing stuff on here.
+[ ] post about everything is an experiement
+[ ] post about replacing all the status reports with kanban board
+[ ] post about a small step in the right direction is progress and agility. prag dave mentioned this on r uby rogues
+[ ] metrics are useful only if it's measuring the right things.
+[ ] we need to plan to maximize the level of options that we have in the future. That will provide us the level of edit adaptivity the ability that we need.

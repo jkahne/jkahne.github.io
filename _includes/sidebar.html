@@ -1,0 +1,51 @@
+<div>
+  <a href="/">home</a>
+</div>
+<hr />
+
+<div id="about">
+  I write software and manage projects.  <br/>
+  How can I assist you?
+</div>
+<hr />
+
+<div class="search" id="js-search">
+  <input type="text" placeholder="search" class="search__input form-control" id="js-search__input">
+  <ul class="search__results" id="js-search__results"></ul>
+</div>
+<hr />
+
+<div>
+  <h3>Recent Posts</h3>
+  {% for post in site.posts limit: 3 %}
+  <div class="post-stub">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </div>
+  {% endfor %}
+</div>
+<hr />
+
+<div>
+  <h1>Tag Cloud</h1>
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %}
+  <span class="site-tag">
+    <a href="/tag/{{ tag | first | slugify }}/"
+       style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+      {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+    </a>
+  </span>
+  {% endfor %}
+</div>
+<hr />
+
+<div>
+  <a href="/archive">Archives</a>
+</div>
+<hr />
+
+<div>
+  {% for i in site.social-urls %}
+  <a href="{{ i.url }}" target="_blank"><i class="fa fa-{{ i.fa }} fa-2x social_url"></i></a>
+  {% endfor %}
+</div>
