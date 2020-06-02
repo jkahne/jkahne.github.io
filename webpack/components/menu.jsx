@@ -14,7 +14,7 @@ const Menu = () =>  {
   return (
     <div className="header-content">
       <h3>
-        <a href="/"}>Title</a>
+        <a href="/">Title</a>
       </h3>
       <nav>
         <div className={`nav-links ${burger ? "nav-active" : ""}`}>
@@ -37,3 +37,4 @@ const Menu = () =>  {
   )
 }
 
+export default Menu;

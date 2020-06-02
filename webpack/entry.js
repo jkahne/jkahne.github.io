@@ -1,10 +1,10 @@
 
 import React from "react"
 import ReactDOM from 'react-dom';
-import Menu from './components/menu'
+import Menu from './components/menu.jsx'
 
 console.log('hello world')
 
 
-// const domContainer = document.querySelector('#menu');
-// ReactDOM.render(React.createElement(Menu), domContainer);
+ReactDOM.render(<Menu />, document.getElementById('menu'));
+
