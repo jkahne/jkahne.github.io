@@ -1,0 +1,69 @@
+html,
+body {
+  font-family: $font-body;
+  line-height: grid(1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-header;
+  margin: $space 0 $space-sm;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  line-height: grid(2);
+
+  @media screen and (min-width: $screen-mobile) {
+    font-size: $h1-font-size;
+  }
+}
+
+h2 {
+  font-size: $h3-font-size;
+  line-height: grid(2);
+
+  @media screen and (min-width: $screen-mobile) {
+    font-size: $h2-font-size;
+  }
+}
+
+h3 {
+  font-size: $h4-font-size;
+  line-height: grid(1.25);
+
+  @media screen and (min-width: $screen-mobile) {
+    font-size: $h3-font-size;
+  }
+}
+
+h4 {
+  font-size: $h5-font-size;
+  line-height: grid(0.75);
+
+  @media screen and (min-width: $screen-mobile) {
+    font-size: $h4-font-size;
+  }
+}
+
+h5 {
+  font-size: $h6-font-size;
+  line-height: grid(0.75);
+
+  @media screen and (min-width: $screen-mobile) {
+    font-size: $h5-font-size;
+  }
+}
+
+h6 {
+  font-size: $font-size-sm;
+  line-height: grid(0.75);
+
+  @media screen and (min-width: $screen-mobile) {
+    font-size: $h6-font-size;
+  }
+}

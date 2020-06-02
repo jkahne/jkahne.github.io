@@ -1,0 +1,33 @@
+---
+---
+
+//BASE
+@import "base/reset";
+@import "base/fonts";
+@import "base/variables";
+@import "base/typography";
+@import "base/layout";
+
+@import "blocks/bio";
+@import "blocks/blog";
+@import "blocks/nav";
+
+
+// h1, h2, h3, h4, h5, h6 {
+//   color: $gray-dk;
+// }
+
+// :export {
+//   fontBody: $font-body;
+//   fontHeader: $font-body;
+//
+//   fontSizeSm: $font-size-sm;
+//   fontSizeLg: $font-size-lg;
+//
+//   spaceXs: $space-xs;
+//   spaceSm: $space-sm;
+//   space: $space;
+//   spaceLg: $space-lg;
+//   spaceXl: $space-xl;
+//   spaceXxl: $space-xxl;
+// }

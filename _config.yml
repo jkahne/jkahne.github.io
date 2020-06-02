@@ -49,9 +49,10 @@ paginate: 20
 per_page: 20
 paginate_path: "/page:num/"
 markdown: kramdown
-exclude: ['README.markdown', '_excludes/*', '.gitignore', 'ref.txt', 'codex-ideas.md', 'nimbleriver.md']
+exclude: ['README.markdown', '_excludes/*', '.gitignore', 'ref.txt', 'codex-ideas.md', 'nimbleriver.md', 'node_modules']
 sass:
-  style: compressed
+  sass_dir: _sass
+  # style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.

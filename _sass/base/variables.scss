@@ -1,0 +1,40 @@
+$gray-dk: #ccaa44;
+
+$font-body: scorpiotailmedium, Helvetica, Arial, sans-serif;
+$font-header: scorpiotailmedium, Helvetica, Arial, sans-serif;
+
+$font-medium: scorpiotailmedium, Helvetica, Arial, sans-serif;
+$font-bold: scorpiotailmedium, Helvetica, Arial, sans-serif;
+
+$font-size-sm: 0.875em;
+$font-size-lg: 1.3em;
+
+//Major third type-scale
+$h1-font-size: 3rem;
+$h2-font-size: 2.625rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
+////////////////////////////
+//// SPACING ///////////////
+
+$space-none: 0;
+$space-xxs: grid(0.1);
+$space-xs: grid(0.25);
+$space-sm: grid(0.5);
+$space: grid(1);
+$space-lg: grid(2);
+$space-xl: grid(3);
+$space-xxl: grid(4);
+
+////////////////////////////
+//// SCREEN SIZES //////////
+
+$screen-mobile: 576px;
+$screen-tablet: 768px;
+$screen-desktop: 992px;
+$screen-monster: 1200px;
+
+$page-width: 1000px;

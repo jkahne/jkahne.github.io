@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: auto 2rem;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 50px;
+  top: 0;
+  background: #fff;
+}
+
+.header-content {
+  max-width: $page-width;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 2rem 10px;
+}
+
+@media screen and (min-width: $page-width) {
+  .container {
+    margin: auto;
+  }
+  .header-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+nav {
+  margin-right: 5px;
+  a {
+    margin: 5px;
+  }
+}
+
+.current_page {
+  font-size: $h3-font-size;
+}
+
+main {
+  margin: 4rem auto;
+  max-width: $page-width;
+}
+
+footer {
+  margin: 4rem auto;
+  max-width: $page-width;
+}
