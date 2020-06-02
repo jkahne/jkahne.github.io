@@ -32,11 +32,31 @@
 
   <body>
     <div class="container">
-      <div id="menu"></div>
+      <header>
+        <div class="header-content">
+          <h3>hwat?</h3>
+          <nav>
+            <div class="nav-links">
+              <div >
+                <a href="/work" > Work </a>
+                <a href="/blog" > Blog </a>
+                <a href="/about" > About </a>
+                <a href="/contact" > Contact </a>
+                BIO goes here
+                <div>Copyright © {{ 'now' | date: "%Y" }} &copy; {{ site.author }} </div>
+              </div>
+            </div>
+            <div class="burger" >
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </div>
+      </header>
       <main>
         {{ content }}
       </main>
-      <footer>Copyright © {new Date().getFullYear()} Jeremy Kahne</footer>
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -48,7 +68,7 @@
       <!-- <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script> -->
       <!-- <script crossorigin src="https://unpkg.com/react&#45;dom@16/umd/react&#45;dom.production.min.js"></script>      -->
       <!-- <script type="text/babel" src="https://unpkg.com/babel&#45;standalone@6/babel.min.js"></script> -->
+      <script src="/assets/js/menu.js"></script>
 
-      <script type="text/javascript" src="/assets/js/bundle.js" charset="utf-8"></script>
   </body>
 </html>

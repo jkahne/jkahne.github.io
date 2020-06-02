@@ -3,7 +3,3 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
-src/assets/bundle.js
-assets/bundle.js
-assets/js/bundle.js
-node_modules

@@ -3,8 +3,9 @@ layout: post
 title:  Summing an Array of Hashes in Ruby
 date:   2016-05-31
 tags: [ruby, til]
-published: false
+published: true
 author: JK
+img: "/assets/img/texas-sized-10-4.png"
 ---
 
 The merge method on a hash object can accept a block for a key and the two values of the hashes so you can create a new value from the two hashes.    

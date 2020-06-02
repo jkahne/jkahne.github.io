@@ -4,6 +4,7 @@ published: true
 date: 2019-06-21
 tags: [quote]
 author: JK
+img: "/assets/img/texas-sized-10-4.png"
 ---
 
 

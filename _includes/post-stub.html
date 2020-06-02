@@ -1,21 +1,30 @@
-<div class="post-stub">
-    <h2>
-      <span class="date hidden-xs">
-        {{ include.post.date | date_to_string }}
-      </span>
-      <span class="title">
-        {% if include.post._url %}
-        <a href="{{ include.post._url }}" target="_blank">
-          {{ include.post.title }}
-          <i class="fa fa-external-link"></i>
-        </a>
-        {% else %}
-        <a href="{{ include.post.url }}">{{ include.post.title }}</a>
-        {% endif %}
-      </span>
-    </h2>
-    {% if include.post._url %}
-    {% else %}
-    {{ include.post.excerpt }}
-    {% endif %}
-</div>
+<!-- <div class="post&#45;stub"> -->
+<!--     <h2> -->
+<!--       <span class="date hidden&#45;xs"> -->
+<!--         {{ include.post.date | date_to_string }} -->
+<!--       </span> -->
+<!--       <span class="title"> -->
+<!--         {% if include.post._url %} -->
+<!--         <a href="{{ include.post._url }}" target="_blank"> -->
+<!--           {{ include.post.title }} -->
+<!--           <i class="fa fa&#45;external&#45;link"></i> -->
+<!--         </a> -->
+<!--         {% else %} -->
+<!--         <a href="{{ include.post.url }}">{{ include.post.title }}</a> -->
+<!--         {% endif %} -->
+<!--       </span> -->
+<!--     </h2> -->
+<!--     {% if include.post._url %} -->
+<!--     {% else %} -->
+<!--     {{ include.post.excerpt }} -->
+<!--     {% endif %} -->
+<!-- </div> -->
+
+<article class="blog-article">
+  <h3>
+    <a href={{ include.post.url }}>{{ include.post.title }}</a>
+  </h3>
+  <small>{{ include.post.date | date_to_string }}</small>
+  <img src={{ include.post.img }} />
+</article>
+

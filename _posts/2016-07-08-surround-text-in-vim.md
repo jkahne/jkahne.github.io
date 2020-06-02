@@ -3,8 +3,9 @@ layout: post
 title:  Surround text in VIM
 date:   2016-07-08
 tags: [til, vim]
-published: false
+published: true
 author: JK
+img: "/assets/img/texas-sized-10-4.png"
 ---
 
 A reminder to use the awesome [Surround.vim](https://github.com/tpope/vim-surround) plugin.
