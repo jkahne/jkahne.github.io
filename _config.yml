@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Words
+title: Jeremy's Crap 
 description: > # this means to ignore newlines until "baseurl:"
   labels go here
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -26,6 +26,7 @@ url: "http://jkahne.dev" # the base hostname & protocol for your site, e.g. http
 author: Jeremy Kahne
 email: jkahne@gmail.com
 github: http://github.com/jkahne
+highlighter: rouge
 
 social-urls:
   - url: mailto:mailtojeremyk@gmail.com
@@ -45,8 +46,8 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
 
-paginate: 20
-per_page: 20
+paginate: 20 
+per_page: 20 
 paginate_path: "/page:num/"
 markdown: kramdown
 exclude: ['README.markdown', '_excludes/*', '.gitignore', 'ref.txt', 'codex-ideas.md', 'nimbleriver.md', 'node_modules']

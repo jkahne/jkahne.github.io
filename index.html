@@ -1,8 +1,7 @@
 ---
 layout: default
+title: Jeremy's Crap
 ---
-
-<h1>{{ site.title }}</h1>
 
 <section class="blog-feed">
   {% for post in paginator.posts %}
@@ -10,15 +9,4 @@ layout: default
   {% endfor %}
 </section>
 
-<!-- { % include pagination.html % } -->
-{% if paginator.total_pages > 1 %}
-<div class="pull-right">
-  <a href="/archive" class="btn">
-    Archives
-    <i class="fa fa-caret-right"></i>
-  </a>
-</div>
-<div class="clearfix"></div>
-
-{% endif %}
 

@@ -19,6 +19,22 @@
   }
 }
 
+.blog-archive {
+  display: flex;
+  flex-direction: column;
+}
+.blog-archive-item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+.blog-archive-item-date {
+  width: 100px;
+}
+.blog-archive-item-arrow {
+  width: 20px;
+}
+
 .blog-article {
   img {
     width: 100%;

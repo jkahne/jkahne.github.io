@@ -67,3 +67,19 @@ h6 {
     font-size: $h6-font-size;
   }
 }
+
+a, a:visited {
+  text-decoration: none;
+  color: #484848;
+}
+
+a:link, a:active {
+    text-decoration: none;
+    color: #8C8C8C;
+}
+
+a:hover {
+    color: #484848;
+    text-decoration: underline;
+}
+

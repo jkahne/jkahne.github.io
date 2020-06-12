@@ -1,7 +1,7 @@
 .nav-links {
   position: absolute;
   right: 0;
-  top: 39px;
+  top: 0;
   height: 100vh;
   width: 70%;
   background-color: #fff;
@@ -10,9 +10,10 @@
   align-items: center;
   transform: translateX(100%);
   transition: transform 0.3s ease-in;
-  z-index: auto !important;
+  border-left: 1px solid #eee;
 }
-.nav-links div {
+.nav-links {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +29,7 @@
 .burger {
   display: block;
   cursor: pointer;
+  z-index: 10 !important;
 }
 
 .burger div{
@@ -59,4 +61,18 @@
 }
 .burger-x .line3{
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.social-links {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.site-tag {
+  padding-top: 20px;
+}
+
+.copyright {
+  position: absolute;
+  top: 95vh;
 }
