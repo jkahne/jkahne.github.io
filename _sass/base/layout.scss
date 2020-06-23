@@ -10,6 +10,11 @@ html {
 
 .container {
   margin: auto 2rem;
+  // background-color: #ffffff;
+}
+
+body {
+  // filter: invert(100%) hue-rotate(180deg);
 }
 
 header {
@@ -46,6 +51,10 @@ nav {
   a {
     margin: 5px;
   }
+}
+
+p {
+  padding-top: 2em;
 }
 
 .current_page {
