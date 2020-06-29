@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
-    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.author }}{% endif %}</title>
-    <meta name="author" content="{{ site.author }}" />
-    <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+  <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.author }}{% endif %}</title>
+  <meta name="author" content="{{ site.author }}" />
+  <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
+  <meta name="keywords"
+    content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/assets/css/syntax.css">
 
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
 
-    <!-- Fonts -->
-    <!-- <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700&#38;amp;subset=latin,latin&#45;ext" rel="stylesheet" type="text/css"> -->
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="/assets/css/bootstrap.min.css" rel="stylesheet"> -->
 
-    <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
-    <link rel="stylesheet" href="/assets/css/index.css">
-    <!-- <link rel="stylesheet" href="/assets/css/super&#45;search.css"> -->
-  </head>
+  <!-- Fonts -->
+  <!-- <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700&#38;amp;subset=latin,latin&#45;ext" rel="stylesheet" type="text/css"> -->
 
-  <body>
-    <div class="container">
-      <header>
-        <div class="header-content">
-          <h3> <a href="/" > {{ site.title }} </a></h3>
-          <nav>
-            <div class="nav-links">
-                <a href="/" > Home </a>
-                <a href="/about" > About </a>
-                <a href="/archive"> All the words </a>
+  <!-- Custom CSS -->
+  <!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <!-- <link rel="stylesheet" href="/assets/css/super&#45;search.css"> -->
+</head>
 
-                <!-- BIO goes here -->
-                <span class="social-links">
-                  {% for i in site.social-urls %}
-                  <a href="{{ i.url }}" target="_blank"><i class="fa fa-{{ i.fa }} social_url"></i></a>
-                  {% endfor %}
-                </span>
-<!-- <div class="search" id="js&#45;search"> -->
-<!--   <input type="text" placeholder="search" class="search__input form&#45;control" id="js&#45;search__input"> -->
-<!--   <ul class="search__results" id="js&#45;search__results"></ul> -->
-<!-- </div> -->
-                {% assign tags = site.tags | sort %}
-                <span class="site-tag">
-                {% for tag in tags %}
-                  <a href="/tag/{{ tag | first | slugify }}/"
-                     style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-                    {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-                  </a>
-                {% endfor %}
-                </span>
-                <span class="copyright">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.author }} </span>
-            </div>
-            <div class="burger" >
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <main>
-        {{ content }}
-      </main>
-    </div>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-content">
+        <h3> <a href="/"> {{ site.title }} </a></h3>
+        <nav>
+          <div class="nav_links">
+            <a href="/"> Home </a>
+            <a href="/about"> About </a>
+            <a href="/archive"> All the words </a>
 
-    <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-      <!-- <script src="/assets/js/bootstrap.min.js"></script> -->
-      <!-- <script src="/assets/js/super&#45;search.js"></script> -->
-      <script src="/assets/js/menu.js"></script>
-  </body>
+            <!-- BIO goes here -->
+            <span class="nav_links__social">
+              {% for i in site.social-urls %}
+              <a href="{{ i.url }}" target="_blank"><i class="fa fa-{{ i.fa }} social_url"></i></a>
+              {% endfor %}
+            </span>
+            <!-- <div class="search" id="js&#45;search"> -->
+            <!--   <input type="text" placeholder="search" class="search__input form&#45;control" id="js&#45;search__input"> -->
+            <!--   <ul class="search__results" id="js&#45;search__results"></ul> -->
+            <!-- </div> -->
+            {% assign tags = site.tags | sort %}
+            <span class="nav_links__tag">
+              {% for tag in tags %}
+              <a href="/tag/{{ tag | first | slugify }}/"
+                style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+                {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+              </a>
+              {% endfor %}
+            </span>
+            <span class="nav_links__copyright">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.author }} </span>
+          </div>
+          <div class="burger">
+            <div class="burger--active line1"></div>
+            <div class="burger--active line2"></div>
+            <div class="burger--active line3"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+        ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  <!-- <script src="/assets/js/bootstrap.min.js"></script> -->
+  <!-- <script src="/assets/js/super&#45;search.js"></script> -->
+  <script src="/assets/js/menu.js"></script>
+</body>
+
 </html>
