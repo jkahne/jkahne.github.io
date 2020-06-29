@@ -38,31 +38,32 @@
   &--active{
     transform: translateX(0%);
   }
+
+  &__burger {
+    display: block;
+    cursor: pointer;
+    z-index: 10 !important;
+
+    div{
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+
+    &--active .line1{
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    &--active .line2{
+      opacity: 0
+    }
+    &--active .line3{
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
 }
 
-.burger {
-  display: block;
-  cursor: pointer;
-  z-index: 10 !important;
-
-  div{
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px;
-    transition: all 0.3s ease;
-  }
-
-  &--active .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  &--active .line2{
-    opacity: 0
-  }
-  &--active .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-}
 
 @media screen and (max-width: $page-width){
   body {
