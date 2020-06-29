@@ -4,6 +4,6 @@ title: Pages
 permalink: /pages/
 ---
 
-### Past Work
+### Pages
 
-[ebth](/pages/ebth)
+[example](/pages/example)
