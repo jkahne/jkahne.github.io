@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Jeremy's Crap 
+title: Jeremy's Crap
 description: > # this means to ignore newlines until "baseurl:"
   labels go here
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -46,10 +46,11 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
 
-paginate: 20 
-per_page: 20 
+paginate: 20
+per_page: 20
 paginate_path: "/page:num/"
 markdown: kramdown
+highlighter: rouge
 exclude: ['README.markdown', '_excludes/*', '.gitignore', 'ref.txt', 'codex-ideas.md', 'nimbleriver.md', 'node_modules']
 sass:
   sass_dir: _sass
