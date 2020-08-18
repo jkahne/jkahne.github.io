@@ -38,7 +38,7 @@
       <div class="header-content">
         <h3> <a href="/"> {{ site.title }} </a></h3>
         <nav>
-          <div class="nav_links">
+          <div data-nav class="nav_links">
             <a href="/"> Home </a>
             <a href="/about"> About </a>
             <a href="/archive"> All the words </a>
@@ -62,9 +62,12 @@
               </a>
               {% endfor %}
             </span>
-            <span class="nav_links__copyright">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.author }} </span>
+            <span class="nav_links__copyright">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.author }}
+              <br />The opinions expressed herein are my own and do not represent those of my employer or any other
+              third-party views in any way
+            </span>
           </div>
-          <div class="nav_links__burger">
+          <div data-burger class="nav_links__burger">
             <div class="nav_links__burger--active line1"></div>
             <div class="nav_links__burger--active line2"></div>
             <div class="nav_links__burger--active line3"></div>
