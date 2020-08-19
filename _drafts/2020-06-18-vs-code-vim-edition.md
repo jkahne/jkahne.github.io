@@ -1,7 +1,7 @@
 ---
 title: "VS Code: VIM Edition"
 published: false
-date: 2020-06-18
+date: 2020-06-19
 tags: [vim, editor, vscode]
 author: Jeremy
 img: "/assets/img/texas-sized-10-4.png"

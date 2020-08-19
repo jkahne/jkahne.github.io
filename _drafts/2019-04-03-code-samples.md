@@ -1,10 +1,22 @@
 ---
 title: "Welcome to Jekyll!"
-published: true
+published: false
 img: "/assets/img/texas-sized-10-4.png"
 ---
 
 **Hello world**, this is my first Jekyll blog post.
+
+*Hello world*, this is my first Jekyll blog post.
+
+
+Link:
+[Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+
+
+
+Image:
+![Texas sized 10-4](/assets/img/texas-sized-10-4.png)
+
 
 I hope you like it!
 
@@ -13,7 +25,7 @@ I hope you like it!
 document.write("JavaScript is a simple language for javatpoint learners");
 {% endhighlight %}
 
-ruby
+## ruby
 {% highlight ruby linenos %}
 def show
   puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"
@@ -25,7 +37,7 @@ def show
 end
 {% endhighlight %}
 
-# html
+## html
 {% highlight html %}
 <html>
   <head><title>Title!</title></head>
@@ -39,8 +51,14 @@ end
 
 
 
-# Highlighter
-## Ruby
+{% highlight vim %}
+  ysiw] #=> [word]
+  ysiw[ #=> [ word ]
+{% endhighlight %}
+
+
+## Highlighter
+### Ruby
 ```ruby
 def show
   puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"
