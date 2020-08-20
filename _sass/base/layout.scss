@@ -26,6 +26,11 @@ header {
   background: #fff;
 }
 
+.header-wrapper {
+  background-color: #efefef;
+  height: 100%;
+}
+
 .header-content {
   max-width: $page-width;
   height: 100%;
@@ -33,7 +38,6 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0px 2rem 10px;
-  background-color: #efefef;
 }
 
 @media screen and (min-width: $page-width) {

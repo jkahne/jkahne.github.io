@@ -35,44 +35,46 @@
 <body>
   <div class="container">
     <header>
-      <div class="header-content">
-        <h3> <a href="/"> {{ site.title }} </a></h3>
-        <nav>
-          <div data-nav class="nav_links">
-            <a href="/"> Home </a>
-            <a href="/about"> About </a>
-            <a href="/archive"> All the words </a>
+      <div class="header-wrapper">
+        <div class="header-content">
+          <h3> <a href="/"> {{ site.title }} </a></h3>
+          <nav>
+            <div data-nav class="nav_links">
+              <a href="/"> Home </a>
+              <a href="/about"> About </a>
+              <a href="/archive"> All the words </a>
 
-            <!-- BIO goes here -->
-            <span class="nav_links__social">
-              {% for i in site.social-urls %}
-              <a href="{{ i.url }}" target="_blank"><i class="fa fa-{{ i.fa }} social_url"></i></a>
-              {% endfor %}
-            </span>
-            <!-- <div class="search" id="js&#45;search"> -->
-            <!--   <input type="text" placeholder="search" class="search__input form&#45;control" id="js&#45;search__input"> -->
-            <!--   <ul class="search__results" id="js&#45;search__results"></ul> -->
-            <!-- </div> -->
-            {% assign tags = site.tags | sort %}
-            <span class="nav_links__tag">
-              {% for tag in tags %}
-              <a href="/tag/{{ tag | first | slugify }}/"
-                style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
-                {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
-              </a>
-              {% endfor %}
-            </span>
-            <span class="nav_links__copyright">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.author }}
-              <br />The opinions expressed herein are my own and do not represent those of my employer or any other
-              third-party views in any way
-            </span>
-          </div>
-          <div data-burger class="nav_links__burger">
-            <div class="nav_links__burger--active line1"></div>
-            <div class="nav_links__burger--active line2"></div>
-            <div class="nav_links__burger--active line3"></div>
-          </div>
-        </nav>
+              <!-- BIO goes here -->
+              <span class="nav_links__social">
+                {% for i in site.social-urls %}
+                <a href="{{ i.url }}" target="_blank"><i class="fa fa-{{ i.fa }} social_url"></i></a>
+                {% endfor %}
+              </span>
+              <!-- <div class="search" id="js&#45;search"> -->
+              <!--   <input type="text" placeholder="search" class="search__input form&#45;control" id="js&#45;search__input"> -->
+              <!--   <ul class="search__results" id="js&#45;search__results"></ul> -->
+              <!-- </div> -->
+              {% assign tags = site.tags | sort %}
+              <span class="nav_links__tag">
+                {% for tag in tags %}
+                <a href="/tag/{{ tag | first | slugify }}/"
+                  style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+                  {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+                </a>
+                {% endfor %}
+              </span>
+              <span class="nav_links__copyright">Copyright &copy; {{ 'now' | date: "%Y" }} {{ site.author }}
+                <br />The opinions expressed herein are my own and do not represent those of my employer or any other
+                third-party views in any way
+              </span>
+            </div>
+            <div data-burger class="nav_links__burger">
+              <div class="nav_links__burger--active line1"></div>
+              <div class="nav_links__burger--active line2"></div>
+              <div class="nav_links__burger--active line3"></div>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
