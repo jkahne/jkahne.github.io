@@ -1,11 +1,10 @@
-—
-title: “How I Like to Work”
+---
+title: "How I Like to Work"
 published: false
 date: 2020-09-08
 author: Jeremy
-img: “/assets/img/hatching.jpeg”
-—
-
+img: "/assets/img/hatching.jpeg"
+---
 Someone has an idea for a product. 
 Whole team ( 2 devs and a designer ) speak with them, and any other stakeholders. 
     Introductions

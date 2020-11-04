@@ -6,5 +6,4 @@ author: Jeremy
 img: "/assets/img/hatching.jpeg"
 ---
 
-![](/assets/img/hatching.jpeg)
-.
+I need to put some words on here.
